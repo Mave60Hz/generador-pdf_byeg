@@ -5,5 +5,5 @@ target/
 logs/
 dependency-reduced-pom.xml
 *.log
-# Keep locally completed database credentials out of version control.
+# Keep local credentials out of version control; commit the safe .example template instead.
 src/main/resources/database.properties

@@ -1,0 +1,11 @@
+# Copia este archivo como database.properties y completa usuario/clave localmente.
+db2.url=jdbc:db2://172.19.35.121:52000/DBFE
+db2.driver=com.ibm.db2.jcc.DB2Driver
+db2.username=
+db2.password=
+
+# La conexion alterna permanece deshabilitada por ahora.
+# db2.old.url=jdbc:db2://172.19.35.89:52000/DBFE
+# db2.old.driver=com.ibm.db2.jcc.DB2Driver
+# db2.old.username=
+# db2.old.password=

@@ -20,7 +20,7 @@ Nueva aplicación de escritorio separada del programa legado `help-desk/`, que s
 
 ## Configuración
 
-Configura la única conexión activa en `src/main/resources/database.properties`. El archivo está excluido de Git para evitar publicar credenciales. Las propiedades `db2.old.*` están comentadas porque DBFE_old queda aparcada. El botón de prueba solo abre y cierra la sesión JDBC PROD; no descarga documentos ni llama servicios PDF/XML.
+Configura la única conexión activa en `src/main/resources/database.properties`. Copia primero `src/main/resources/database.properties.example` con ese nombre y completa usuario/contraseña. El archivo local está excluido de Git para evitar publicar credenciales. Las propiedades `db2.old.*` están comentadas porque DBFE_old queda aparcada. El botón de prueba solo abre y cierra la sesión JDBC PROD; no descarga documentos ni llama servicios PDF/XML.
 
 | Variable | Valor por defecto/uso |
 | --- | --- |
