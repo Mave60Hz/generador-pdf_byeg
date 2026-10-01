@@ -1,0 +1,9 @@
+target/
+.idea/
+*.iml
+.env
+logs/
+dependency-reduced-pom.xml
+*.log
+# Keep locally completed database credentials out of version control.
+src/main/resources/database.properties
