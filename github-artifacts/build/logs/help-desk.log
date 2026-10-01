@@ -1,0 +1,48 @@
+2026-10-01 01:59:30.852 INFO  [AWT-EventQueue-0] c.b.helpdesk.HelpDeskApplication - Iniciando Help Desk Next
+2026-10-01 01:59:30.856 INFO  [AWT-EventQueue-0] c.bizlinks.helpdesk.config.AppConfig - Configuración DB2 PROD cargada: jdbc:db2://172.19.35.33:52000/DBFE
+2026-10-01 01:59:48.561 ERROR [AWT-EventQueue-0] c.b.helpdesk.ui.ProdConnectionPanel - Falló la prueba de conexión DB2 PROD a jdbc:db2://172.19.35.33:52000/DBFE
+java.sql.SQLTimeoutException: [jcc][t4][2043][11550][4.33.31] Exception java.net.SocketTimeoutException: Error opening socket to server /172.19.35.33 on port 52,000 with message: Connect timed out. ERRORCODE=-4499, SQLSTATE=08001
+	at com.ibm.db2.jcc.t4.az.a(az.java:464)
+	at com.ibm.db2.jcc.t4.az.<init>(az.java:97)
+	at com.ibm.db2.jcc.t4.a.b(a.java:374)
+	at com.ibm.db2.jcc.t4.b.newAgent_(b.java:2331)
+	at com.ibm.db2.jcc.am.Connection.initConnection(Connection.java:864)
+	at com.ibm.db2.jcc.am.Connection.<init>(Connection.java:806)
+	at com.ibm.db2.jcc.t4.b.<init>(b.java:367)
+	at com.ibm.db2.jcc.DB2SimpleDataSource.getConnection(DB2SimpleDataSource.java:259)
+	at com.ibm.db2.jcc.DB2SimpleDataSource.getConnection(DB2SimpleDataSource.java:215)
+	at com.ibm.db2.jcc.DB2Driver.connect(DB2Driver.java:491)
+	at com.ibm.db2.jcc.DB2Driver.connect(DB2Driver.java:117)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:199)
+	at com.bizlinks.helpdesk.service.Db2DocumentRepository.testConnection(Db2DocumentRepository.java:24)
+	at com.bizlinks.helpdesk.ui.ProdConnectionPanel$1.doInBackground(ProdConnectionPanel.java:47)
+	at com.bizlinks.helpdesk.ui.ProdConnectionPanel$1.doInBackground(ProdConnectionPanel.java:45)
+	at java.desktop/javax.swing.SwingWorker$1.call(SwingWorker.java:303)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.desktop/javax.swing.SwingWorker.run(SwingWorker.java:340)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+Caused by: com.ibm.db2.jcc.am.DisconnectNonTransientConnectionException: [jcc][t4][2043][11550][4.33.31] Exception java.net.SocketTimeoutException: Error opening socket to server /172.19.35.33 on port 52,000 with message: Connect timed out. ERRORCODE=-4499, SQLSTATE=08001
+	at com.ibm.db2.jcc.am.b4.a(b4.java:338)
+	at com.ibm.db2.jcc.am.b4.a(b4.java:435)
+	at com.ibm.db2.jcc.t4.az.a(az.java:457)
+	... 21 common frames omitted
+Caused by: java.net.SocketTimeoutException: Connect timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:547)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:594)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:284)
+	at java.base/java.net.Socket.connect(Socket.java:659)
+	at com.ibm.db2.jcc.t4.w.a(w.java:51)
+	at com.ibm.db2.jcc.t4.az.a(az.java:441)
+	... 21 common frames omitted
+2026-10-01 02:02:02.402 INFO  [AWT-EventQueue-0] c.b.helpdesk.HelpDeskApplication - Iniciando Help Desk Next
+2026-10-01 02:02:02.406 INFO  [AWT-EventQueue-0] c.bizlinks.helpdesk.config.AppConfig - Configuración DB2 PROD cargada: jdbc:db2://172.19.35.121:52000/DBFE
+2026-10-01 02:02:05.312 INFO  [AWT-EventQueue-0] c.b.helpdesk.ui.ProdConnectionPanel - Prueba de conexión DB2 PROD exitosa: DB2/NT64 SQL10058
+2026-10-01 02:02:14.854 INFO  [AWT-EventQueue-0] c.b.helpdesk.HelpDeskApplication - Iniciando Help Desk Next
+2026-10-01 02:02:14.858 INFO  [AWT-EventQueue-0] c.bizlinks.helpdesk.config.AppConfig - Configuración DB2 PROD cargada: jdbc:db2://172.19.35.121:52000/DBFE
+2026-10-01 02:02:16.398 INFO  [AWT-EventQueue-0] c.b.helpdesk.ui.ProdConnectionPanel - Prueba de conexión DB2 PROD exitosa: DB2/NT64 SQL10058
+2026-10-01 02:03:05.602 INFO  [AWT-EventQueue-0] c.b.helpdesk.HelpDeskApplication - Iniciando Help Desk Next
+2026-10-01 02:03:05.605 INFO  [AWT-EventQueue-0] c.bizlinks.helpdesk.config.AppConfig - Configuración DB2 PROD cargada: jdbc:db2://172.19.35.121:52000/DBFE
+2026-10-01 02:03:11.497 INFO  [AWT-EventQueue-0] c.b.helpdesk.ui.ProdConnectionPanel - Prueba de conexión DB2 PROD exitosa: DB2/NT64 SQL10058
